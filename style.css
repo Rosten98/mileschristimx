@@ -32,19 +32,23 @@ h1 {
 ul {
   margin-bottom: 0px;
 }
+.main-header {
+  padding: 10px 0;
+}
 header {
   background-color: #393939;
 }
-header nav li {
+header nav li, footer nav li {
   list-style: none;
   display: inline-block;
   padding: 0 15px;
 }
-header nav li a {
+header nav li a, footer nav li a {
+  font-weight: 500;
   color: #fff;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
-header nav li a:hover {
+header nav li a:hover, footer nav li a:hover {
   color: #fff;
 }
 footer {

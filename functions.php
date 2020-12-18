@@ -8,7 +8,8 @@ function init_template(){
 
     register_nav_menus(
         array(
-            'top_menu' => 'Menú Principal'
+            'top_menu' => 'Menú Principal',
+            'footer' => 'Pié de página'
         )
     );
 
