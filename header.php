@@ -9,10 +9,14 @@
 <body>
 
 <header class="main-header">
+<?php
+$custom_logo_id = get_theme_mod('custom_logo');
+$image = wp_get_attachment_image_src($custom_logo_id, 'full');
+?>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-3">
-                <img class="logo" src="<?php echo get_template_directory_uri()?>/assets/img/logo-blanco-mc.png" alt="Logo de Miles Christi">
+                <img class="logo" src="<?php echo $image[0];?>" alt="Logo de Miles Christi">
             </div>
             <div class="col-9">
                 <nav>
